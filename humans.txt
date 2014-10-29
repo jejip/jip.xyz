@@ -1,0 +1,14 @@
+/* TEAM */
+  The jip himself: Jip Eilbracht
+  Site: wopij.com
+  Twitter: @wopij
+  Location: Netherlands
+
+/* THANKS */
+  The creators of Foundation, the awesome people at ZURB. Without them, it would have cost me an awful lot of time to create this website.
+
+/* SITE */
+  Last update: 2014/03/16
+  Standards: HTML5, CSS3
+  Components: Foundation, jQuery, Modernizr
+  Software: Sublimetiext, Git

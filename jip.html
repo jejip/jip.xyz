@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Jip</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,700|Roboto+Slab:300' rel='stylesheet' type='text/css'>
+
+    <script src="bower_components/modernizr/modernizr.js"></script>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="header">
+    <div id="title"><h1>Jip Eilbracht<span id="title-space"></span>Portfolio</h1></div>
+    <div id="logo"></div>
+      <div class="angle">
+        <div id="left"></div>
+        <div id="right"></div>
+      </div>
+      <div id="left-back"></div>
+      <div id="right-back"></div>
+    </div>
+
+    <div class="row about">
+      <div class="medium-7 columns">
+          <div class="panel">
+          <div class="row">
+            <div class="medium-7 columns">
+            <p>View my physical and digital design projects and video work.</p>
+            </div>
+            <div class="medium-5 columns">
+            <a href="index.html" class="button right">Jip's portfolio</a>
+            </div>
+          </div>
+        </div>
+        <h2>About</h2>
+        <p>Currently I'm a 'Design for Interaction' student at the Technical University Delft. Next to this I work part time at a software startup, <a href="http://www.blinqsystems.nl">Blinq Systems</a>.</p>
+        <p>In 2012 I've been living in Istanbul for half a year. I was studying at the Istanbul Technical University, as a part of my bachelor at the TU Delft. This is where I got the chance to develop more of a design vision, with the help of excellent teachers and a vibrant culture. </p>
+        <h2>You can find me at...</h2>
+        <p>
+        <a href="http://www.twitter.com/wopij">@wopij</a><br>
+        <a href="nl.linkedin.com/pub/jip-eilbracht/7b/2a6/979/">Linkedin</a><br>
+        <a href="http://www.vimeo.com/jipeilbracht">vimeo.com/jipeilbracht</a><br>
+        <a href="http://www.youtube.com/wopij">youtube.com/wopij</a>
+        </p>
+      <h2>...or send me an email</h2>
+        <form action="js/sendmail.php" method="post" id="contactForm">
+                  <label>Email</label>
+                  <input type="text" name="email" value="" id="email" />
+                
+                  <label>Message</label>
+                  <textarea name="message"></textarea>
+
+                  <div class="message"><div class="alert"></div></div>
+                  <input type="submit" value="Send" class="button secondary"/>
+
+              </form>
+        </div>
+        <div class="medium-5 columns">
+        <img src="images/ted/jip.jpg">
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="row">
+        <div class="columns">
+          All content licensed under Creative Commons <span class="copyright"><a href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">CC BY-SA 4.0</a></span>, unless otherwise stated.
+        </div>
+      </div>
+    </div>
+    
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/fastclick/lib/fastclick.js"></script>
+
+    <script src="bower_components/foundation/js/foundation/foundation.js"></script>
+
+    <script src="js/jquery.form.js"></script> 
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var options = {
+        target: '.alert',
+        beforeSubmit: showRequest,
+        success: showResponse
+        };
+        $('#contactForm').ajaxForm(options);
+        });
+        function showRequest(formData, jqForm, options) {
+        var queryString = $.param(formData);
+        return true;
+        }
+        function showResponse(responseText, statusText)  {
+        }
+        $.fn.clearForm = function() {
+          return this.each(function() {
+          var type = this.type, tag = this.tagName.toLowerCase();
+          if (tag == 'form')
+            return $(':input',this).clearForm();
+          if (type == 'text' || type == 'password' || tag == 'textarea')
+            this.value = '';
+          else if (type == 'checkbox' || type == 'radio')
+            this.checked = false;
+          else if (tag == 'select')
+            this.selectedIndex = -1;
+          });
+        };
+    </script>
+  </body>
+</html>

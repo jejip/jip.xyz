@@ -1,0 +1,22 @@
+// The latest settings can be found here:
+// https://github.com/zurb/bower-foundation/blob/master/scss/foundation/_settings.scss
+
+@import "foundation/functions";
+
+$column-gutter: rem-calc(30);
+
+$include-open-sans: false;
+$body-font-family: "Maven Pro", "Helvetica", Helvetica, Arial, sans-serif;
+
+$header-font-family: join("Roboto Slab", $body-font-family);
+$header-font-weight: 300;
+
+$primary-color: #E24D14;
+$secondary-color: #79C6BF;
+
+$magellan-padding: 20px;
+$sub-nav-font-size: rem-calc(18);
+// $sub-nav-font-color: #999;
+// $sub-nav-font-color-hover: scale-color($sub-nav-font-color, $lightness: -25%);
+// $sub-nav-active-bg: $primary-color;
+// $sub-nav-active-bg-hover: scale-color($primary-color, $lightness: -25%);
