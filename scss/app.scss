@@ -215,7 +215,13 @@ a.anchor{display: block; position: relative; top: 20px; visibility: hidden;}
   margin-left: -2.2rem;
 }
 
-.accordion dd a.accordion-button{
+// Accordion
+
+ul.accordion{
+  margin-left: 0rem;
+}
+
+.accordion li.accordion-navigation a{
   padding: .3rem;
   margin-bottom: .5rem;
   transition: margin 100ms;
@@ -230,26 +236,26 @@ a.anchor{display: block; position: relative; top: 20px; visibility: hidden;}
   margin-left: 1rem;
 }
 
-.accordion dd.active a h4:before{
+.accordion li.active a h4:before{
     content: '+';
     transform:rotate(45deg);
   -webkit-transform:rotate(45deg);
 }
 
 
-.accordion dd a:hover{
+.accordion li a:hover{
   margin-bottom: 1rem;
 }
 
-.accordion dd.active a:hover{
+.accordion li.active a:hover{
   margin-bottom: .5rem;
 }
 
-.accordion dd.active a{ //fix the background on content links
+.accordion li.active a{ //fix the background on content links
   background: none;
 }
 
-.accordion dd.active a.accordion-button{
+.accordion li.active a{
   background-color: #e8e8e8;
 }
 
