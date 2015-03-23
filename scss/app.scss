@@ -209,7 +209,7 @@ h3{
   margin-top: 3rem;
 }
 
-a.anchor{display: block; position: relative; top: 20px; visibility: hidden;}
+a.anchor{display: block; position: relative; top: 40px; visibility: hidden;}
 
 .sub-nav{
   margin-left: -2.2rem;
@@ -274,4 +274,5 @@ ul.accordion{
   margin-top: 3rem;
 }
 
-// Page specific styling
+// Make the images not too high to fix magellan+lazy combination
+img.lazy { max-height: 400px; }
