@@ -28,7 +28,7 @@
         <div class="panel">
           <div class="row">
             <div class="medium-9 columns">
-            <p>I create things out of curiosity by my daily encounters. My designs often originate from a social cause, with a focus on the involved interactions. By combining digital and physical design.</p>
+            <p>I create things out of curiosity by my daily encounters. My designs often originate from a social cause. I focus on the involved interactions, and combine digital with physical design.</p>
             </div>
             <div class="medium-3 columns">
             <p><a href="jip.html" class="button secondary right">More about Jip</a></p>
@@ -54,7 +54,7 @@
         <a class="anchor" name="talks-ted"></a>
         <h3>TEDxYouth @ Delft</h3>
           <div class="content">
-            <img src="images/ted/header.jpg" width="970" height="400">
+            <img class="featured" src="images/ted/header.jpg" width="970" height="400">
             <div class="row">
               <div class="medium-5 medium-push-7 columns">
                 <span class="label secondary">12 November 2013</span>
@@ -83,7 +83,7 @@
         <a class="anchor" name="physical-artcom"></a>
           <h3>ART+COM internship</h3>
           <div class="content">
-            <img class="lazy" data-original="images/artcom/artcom_microzoo.jpg" width="970" height="300">
+            <img class="lazy featured" data-original="images/artcom/artcom_microzoo.jpg" width="970" height="400">
             <div class="row">
               <div class="medium-5 medium-push-7 columns">
                 <span class="label secondary">March 2014 - July 2014</span>
@@ -136,7 +136,7 @@
           <a class="anchor" name="physical-library"></a>
           <h3>Getting boys to read</h3>
           <div class="content">
-            <img class="lazy" data-original="images/library/final-render.jpg" width="970" height="400">
+            <img class="lazy featured" data-original="images/library/final-render.jpg" width="970" height="400">
             <div class="row">
               <div class="medium-5 medium-push-7 columns">
                 <span class="label secondary">October 2013</span>
@@ -201,7 +201,7 @@
         <a class="anchor" name="physical-dj"></a>
         <h3>Laptop DJ light</h3>
           <div class="content">
-            <img class="lazy" data-original="images/dj/apenstreken.jpg" width="970" height="400">
+            <img class="lazy featured" data-original="images/dj/apenstreken.jpg" width="970" height="400">
               <div class="row">
               <div class="medium-5 medium-push-7 columns">
                 <span class="label secondary">May 2013 - now</span>
@@ -242,7 +242,7 @@
         <a class="anchor" name="physical-fakir"></a>
         <h3>Flying Carpet</h3>
           <div class="content">
-            <img class="lazy" data-original="images/fakir/cover.jpg" width="960" height="396">
+            <img class="lazy featured" data-original="images/fakir/cover.jpg" width="970" height="400">
             <div class="row">
               <div class="medium-5 medium-push-7 columns">
                 <span class="label secondary">April 2013</span>
@@ -271,7 +271,7 @@
           <a class="anchor" name="digital-mapiq"></a>
           <h3>Mapiq</h3>
           <div class="content">
-            <img class="lazy" data-original="images/mapiq/screenshot.jpg" width="970" height="400">
+            <img class="lazy featured" data-original="images/mapiq/screenshot.jpg" width="970" height="400">
               <div class="row">
               <div class="medium-5 medium-push-7 columns">
                 <span class="label secondary">February 2013 - now</span>
@@ -336,7 +336,7 @@
         <a class="anchor" name="digital-virtualock"></a>
         <h3>VirtuaLock</h3>
           <div class="content">
-            <img class="lazy" data-original="images/virtualock/header.jpg" width="970" height="400">
+            <img class="lazy featured" data-original="images/virtualock/header.jpg" width="970" height="400">
             <div class="row">
               <div class="medium-5 medium-push-7 columns">
                 <span class="label secondary">December 2011 - now</span>
@@ -376,7 +376,7 @@
         <a class="anchor" name="digital-endeavor"></a>
         <h3>Endeavor</h3>
           <div class="content">
-            <img class="lazy" data-original="images/endeavor/header.jpg" width="970" height="400">
+            <img class="lazy featured" data-original="images/endeavor/header.jpg" width="970" height="400">
             <div class="row">
               <div class="medium-5 medium-push-7 columns">
                 <span class="label secondary">November 2011</span>
@@ -416,7 +416,7 @@
         <a class="anchor" name="video-istanbul"></a>
         <h3>Istanbul Scavenger Hunt</h3>
           <div class="content">
-            <img class="lazy" data-original="images/istanbul/header2.jpg" width="970" height="400">
+            <img class="lazy featured" data-original="images/istanbul/header2.jpg" width="970" height="400">
             <div class="row">
               <div class="medium-5 medium-push-7 columns">
                 <span class="label secondary">December 2012</span>
@@ -506,7 +506,7 @@
         <a class="anchor" name="video-promo"></a>
         <h3>Promotional video's</h3>
           <div class="content">
-            <img class="lazy" data-original="images/video/cover.jpg" width="970" height="400">
+            <img class="lazy featured" data-original="images/video/cover.jpg" width="970" height="400">
             <div class="row">
               <div class="medium-5 medium-push-7 columns">
                 <span class="label secondary">2006 - now</span>
@@ -560,7 +560,7 @@
         <a class="anchor" name="video-vj"></a>
         <h3>VJ'ing</h3>
           <div class="content">
-            <img class="lazy" data-original="images/video/vj.jpg" width="970" height="400">
+            <img class="lazy featured" data-original="images/video/vj.jpg" width="970" height="400">
             <div class="row">
               <div class="medium-5 medium-push-7 columns">
                 <span class="label secondary">2008 - 2011</span>
@@ -612,18 +612,22 @@
     <script type="text/javascript">
     $(function() {
       $("img.lazy").lazyload({
-      	threshold : 500,
+      	threshold : 500
       });
     });
-
     //Tried to start loading images as soon as accordion is opened, didn't work up until now
     // $("img.lazy").lazyload({
     // event : "click"
     // });
 
-    // $('.accordion-button').click(function() {
+    // $('.accordion-navigation').click(function() {
     //             $('img.lazy').trigger('click');
     //         });
+
+    //Maybe by calling scroll on click? no...
+      // $('.accordion-navigation').click(function() {
+      //           $('body,html').scroll();
+      // });
     </script>
 
     <script>
