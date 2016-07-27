@@ -215,6 +215,29 @@ a.anchor{display: block; position: relative; top: 40px; visibility: hidden;}
   margin-left: -2.2rem;
 }
 
+// Highlight links
+
+.highlight:before{
+  @extend h3;
+  margin-right: 2rem;
+  content: 'Check it out';
+  font-size: 100%;
+  text-decoration: underline;
+  float: right;
+  margin-top: 0;
+  padding: 0;
+  padding-top: 1.5rem;
+  transition: margin 100ms;
+}
+
+.highlight:hover:before{
+  margin-right: 1rem;
+}
+
+.highlight h3{
+  margin-top:0;
+}
+
 // Accordion
 
 ul.accordion{
