@@ -10,9 +10,8 @@ $include-html-global-classes: $include-html-classes;
 
 $column-gutter: rem-calc(30);
 
-// $include-open-sans: false;
+$include-open-sans: false;
 $body-font-family: "skolar-sans-latin", Helvetica, Arial, sans-serif;
-$body-font-weight: 300;
 
 $header-font-family: join("museo-slab", $body-font-family);
 $header-font-weight: 300;
